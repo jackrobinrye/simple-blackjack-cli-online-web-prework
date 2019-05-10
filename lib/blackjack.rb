@@ -71,5 +71,6 @@ def runner
   if total<=21
     hit?
   else end_game
+  end
 end
     
