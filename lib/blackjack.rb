@@ -71,7 +71,7 @@ def runner
   display_card_total(total)
   if total<=21
     num1 = hit?(num)
-    num += num1
+    total += num1
   else end_game
   end
 end
