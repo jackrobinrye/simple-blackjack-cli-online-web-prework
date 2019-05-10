@@ -36,6 +36,7 @@ def initial_round
   num1 = deal_card
   num2 = deal_card
   display_card_total(num1 + num2)
+  return (num1+num2)
 end
 
 def hit?(current_total)
@@ -65,11 +66,12 @@ end
 def runner
   # code runner here
   welcome 
-  initial_round
-  total = hit?
+  num = initial_round
+  total = hit?(num)
   display_card_total
   if total<=21
-    hit?
+    num1 = hit?(num)
+    num += num1
   else end_game
   end
 end
