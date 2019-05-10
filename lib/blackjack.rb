@@ -72,7 +72,7 @@ def runner
   if total<=21
     num1 = hit?(num)
     total += num1
-  else end_game
+  else end_game(total)
   end
 end
     
