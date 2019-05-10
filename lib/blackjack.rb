@@ -68,7 +68,7 @@ def runner
   welcome 
   num = initial_round
   total = hit?(num)
-  display_card_total
+  display_card_total(total)
   if total<=21
     num1 = hit?(num)
     num += num1
